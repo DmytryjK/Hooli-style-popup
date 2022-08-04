@@ -189,6 +189,10 @@
         width: 100%;
         height: 40px;
         cursor: pointer;
+        &:hover + .header__popup-btn-text {
+            color: $color-light;
+            transition: 0.3s color;
+        }
         &:checked ~ .header__more-content  {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -224,10 +228,6 @@
         cursor: pointer;
         transition: 0.3s color;
         text-decoration: none;
-        &:hover {
-            color: $color-light;
-            transition: 0.3s color;
-        }
     }
 
     &__more-content {
